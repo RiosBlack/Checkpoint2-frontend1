@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <main>
+        <form action="post">
+            <div class="menu">
+                <h1>Formulário de Cadastro</h1>
+            </div>
+            <div>
+            <label class="selec" for="nome"> Nome: <input type="text"></label>
+            </div>
+            <div>
+                <label class="selec" for="email"> Email: <input type="text"></label>
+            </div>
+            <div>
+                <label class="selec" for="telefone"> Telefone: <input type="text"></label>
+            </div>
+            <div>
+                <label class="selec" for="data"> Data de nascimento: <input type="date"></label>
+            </div>
+            <div class="idade">
+                <p for="idade" class="etiqueta">É maior de idade?:</p>
+                <label for="idade_sim">Sim<input type="radio" name="idade"value= "Sim" checked="checked" class="idade"></label>
+                <label for="idade_nao">Não<input type="radio" name="idade" value= "não" class="idade"></label>
+            </div>
+            <div class="selec">
+                <label for="ponto" class="etiqueta">Escolha um ponto de interesse:</label>
+                <select name="ponto">
+                    <option value=""></option>
+                    <option value="pracapref">Praça da prefeitura</option>
+                    <option value="pracajaz">Praça da jazida</option>
+                    <option value="pracinha">Pracinha</option>
+                </select>
+            </div>
+            <div class="selec">
+                <p class="etiqueta">Qual o seu interesse na cidade?</p>
+                <div>
+                    <label for="visitar" class="selec1">Visitar</label>
+                    <input type="checkbox" name="visitar" class="interest">
+                </div>
+                <div>
+                    <label for="morar" class="selec1">Morar</label>
+                    <input type="checkbox" name="morar" class="interest">
+                </div>
+                <div>
+                    <label for="trabalhar" class="selec1">Trabalhar</label>
+                    <input type="checkbox" name="estudante" class="interest">
+                </div>
+            </div>
+            <div class="button">
+                <input type="reset" value="Apagar" class="button-apagar">
+                <input type="submit" value="Enviar" class="button-enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
